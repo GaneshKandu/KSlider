@@ -48,7 +48,7 @@ distance is a distance of images from center of rotation
 	*/
 	height = 200;
 	/*
-	* distance is distance of image
+	* distance is distance of image from center of rotation
 	*/
 	distance = 200;
 	/*---------------------------------------------------------------*/
