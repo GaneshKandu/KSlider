@@ -1,0 +1,66 @@
+<DOCTYPE html>
+<!--
+/*
+* Author: Ganesh Kandu
+* Mailto: kanduganesh@gmail.com
+* Rotating Image Slider
+*/
+-->
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>KSlider</title>
+		<style>
+			#slider {
+				width: 100%;
+				height: 400px;
+			}
+		</style>
+		<link rel="stylesheet" type="text/css" href="css/kslider.mini.css">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/kslider.mini.js"></script> 
+	</head>
+	<body>
+		<div id="slider" >
+			<div id="cont">
+				<div id="Slide">
+					<ul>
+						<li><img class="imgzoom" src="images/kslider (1).jpg"/></li>
+						<li><img class="imgzoom" src="images/kslider (2).jpg"/></li>
+						<li><img class="imgzoom" src="images/kslider (3).jpg"/></li>
+						<li><img class="imgzoom" src="images/kslider (4).jpg"/></li>
+						<li><img class="imgzoom" src="images/kslider (5).jpg"/></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script>
+		/*---------------------------------------------------------------*/
+		/*
+		* width is width of image
+		*/
+		width = 300;
+		/*
+		* height is height of image
+		*/
+		height = 200;
+		/*
+		* distance is distance of image
+		*/
+		distance = 200;
+		/*---------------------------------------------------------------*/
+		a= 0;
+		count = $("#Slide ul li").length;
+		swidth = $('#slider').width();
+		left = ((swidth/2) - width);
+		$('#slider #cont').css( "left",left);
+		action = 0;
+		$(document).ready(function(){
+			time();
+		});
+		$("#slide ul li").mousedown(function(){action = 1;});
+		$("#slide ul li").mouseup(function(){if(action == 1){action = 0;}});
+		$("#slide ul li").mouseout(function(){if(action == 1){action = 0;}});
+		</script>
+	</body>
+</html>

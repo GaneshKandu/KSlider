@@ -1,0 +1,6 @@
+/*
+* Author: Ganesh Kandu
+* Mailto: kanduganesh@gmail.com
+* Rotating Image Slider
+*/
+function slide(child,x){x=x%360;m = Math.sin(x * Math.PI / 180);w = Math.sin((x/2) * Math.PI / 180);if(m < 0){q= -m;}else{q= m;}q=1-q;$('#slide ul li:nth-child('+child+')').css( "opacity", w);$('#slide ul li:nth-child('+child+')').css( "zIndex",Math.round(w*100));$('#slide ul li:nth-child('+child+')').css( "left",((width-w*width)+m*height)+"px" );$('#slide ul li:nth-child('+child+')').css( "width", w*width*2+"px" );$('#slide ul li:nth-child('+child+')').css( "height",w*height*2+"px" );$('#slide ul li:nth-child('+child+')').css( "margin-top",(height-w*height));$('#slide ul li:nth-child('+child+')').css( "margin-left",m*distance);}function rotate(){a++;c = 360/count;for(i=1;i<=count;i++){b = a+i*c;slide(i,b);}/*document.getElementById("dbg").innerHTML = a;*/}function time(){clearTimeout(1);if(action == 0){rotate();}timer = setTimeout(time,50);}$(window).resize(function(){swidth = $('#slider').width();left = ((swidth/2) - width);$('#slider #cont').css( "left",left);});
