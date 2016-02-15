@@ -3,7 +3,7 @@ Rotating Images Slider
 
 
 ##Screenshot example
-![](https://github.com/GaneshKandu/Rotating-Slider/blob/master/sceenshot/screenshot.png)
+![](https://github.com/GaneshKandu/Rotating-Slider/blob/master/sceenshot/screenshot.gif)
 ## Desc
 its a Rotating Images Slider<br/>
 all Images are Rotating in Circular motion
