@@ -33,6 +33,9 @@
 					</ul>
 				</div>
 			</div>
+			<div id="zoomimg">
+				<img></img>
+			</div>
 		</div>
 		<script>
 		/*---------------------------------------------------------------*/
@@ -49,18 +52,9 @@
 		*/
 		distance = 200;
 		/*---------------------------------------------------------------*/
-		a= 0;
-		count = $("#Slide ul li").length;
-		swidth = $('#slider').width();
-		left = ((swidth/2) - width);
-		$('#slider #cont').css( "left",left);
-		action = 0;
 		$(document).ready(function(){
-			time();
+			init_kslide();
 		});
-		$("#slide ul li").mousedown(function(){action = 1;});
-		$("#slide ul li").mouseup(function(){if(action == 1){action = 0;}});
-		$("#slide ul li").mouseout(function(){if(action == 1){action = 0;}});
 		</script>
 	</body>
 </html>

@@ -3,4 +3,4 @@
 * Mailto: kanduganesh@gmail.com
 * Rotating Image Slider
 */
-#slider {position: relative;}#cont{position: absolute;}#slide{position:relative;width:1px;height:1px;}#slide ul li{position:absolute;list-style-type: none;display: inline;width:100%;height:100%;}#slide ul li img{position:absolute;width:100%;height:100%;}#slide ul{padding: 0px;margin: 0px;}
+#slide,#slider{position:relative}#slide ul li,#slide ul li img{width:100%;height:100%;position:absolute}#cont,#slide ul li,#slide ul li img,#zoomimg img{position:absolute}#slide{width:1px;height:1px}#slide ul li{list-style-type:none;display:inline}#slide ul{padding:0;margin:0}#zoomimg img{left:50%;top:50%;transform:translate(-50%,-50%);width:50%;z-index:500}
