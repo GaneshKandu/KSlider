@@ -31,6 +31,7 @@ setting width and height in &lt;style&gt; tag
 adding Images to KSlider 
 
 ``` html
+
 <div id="slider" >
 	<div id="cont">
 		<div id="Slide">
@@ -43,13 +44,17 @@ adding Images to KSlider
 			</ul>
 		</div>
 	</div>
+	<div id="zoomimg">
+		<img></img>
+	</div>
 </div>
 ```
 ###step3
-Setting KSlider
-add this in script tag at bottom of body
+initialising KSlider
+add this in script tag at bottom of body<br/>
+Height,width is a Height,width of images in KSlider<br/>
+distance is a distance of images from center of rotation
 ``` javascript
-
 		/*---------------------------------------------------------------*/
 		/*
 		* width is width of image
@@ -64,37 +69,11 @@ add this in script tag at bottom of body
 		*/
 		distance = 200;
 		/*---------------------------------------------------------------*/
-		a= 0;
-		count = $("#Slide ul li").length;
-		swidth = $('#slider').width();
-		left = ((swidth/2) - width);
-		$('#slider #cont').css( "left",left);
-		action = 0;
 		$(document).ready(function(){
-			time();
+			init_kslide();
 		});
-		$("#slide ul li").mousedown(function(){action = 1;});
-		$("#slide ul li").mouseup(function(){if(action == 1){action = 0;}});
-		$("#slide ul li").mouseout(function(){if(action == 1){action = 0;}});
 ```
-Height,width is a Height,width of images in KSlider<br/>
-distance is a distance of images from center of rotation
-``` javascript
-	/*---------------------------------------------------------------*/
-	/*
-	* width is width of image
-	*/
-	width = 300;
-	/*
-	* height is height of image
-	*/
-	height = 200;
-	/*
-	* distance is distance of image from center of rotation
-	*/
-	distance = 200;
-	/*---------------------------------------------------------------*/
-```
+
 ##About Me
-I am student in India and working as Software Developer in India<br/>
+I am student in and working as Software Developer in India<br/>
 [kanduganesh@gmail.com](mailto:kanduganesh@gmail.com)
