@@ -53,8 +53,9 @@ adding Images to KSlider
 initialising KSlider
 add this in script tag at bottom of body<br/>
 Height,width is a Height,width of images in KSlider<br/>
-distance is a distance of images from center of rotation
-``` javascript
+distance is a distance of images from center of rotation<br/>
+speed is speed of rotation of image in millisecond<br/>
+
 		/*---------------------------------------------------------------*/
 		/*
 		* width is width of image
@@ -68,6 +69,10 @@ distance is a distance of images from center of rotation
 		* distance is distance of image
 		*/
 		distance = 200;
+		/*
+		* speed is speed of rotation of image in millisecond
+		*/
+		speed = 50;
 		/*---------------------------------------------------------------*/
 		$(document).ready(function(){
 			init_kslide();
