@@ -80,7 +80,7 @@ valign is alignment of images
 		* 1.middle
 		* 2.bottom
 		*/
-		valign = 1;ss
+		valign = 1;
 		/*---------------------------------------------------------------*/
 		$(document).ready(function(){
 			init_kslide();
