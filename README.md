@@ -55,6 +55,7 @@ add this in script tag at bottom of body<br/>
 Height,width is a Height,width of images in KSlider<br/>
 distance is a distance of images from center of rotation<br/>
 speed is speed of rotation of image in millisecond<br/>
+valign is alignment of images
 ```javascript
 		/*---------------------------------------------------------------*/
 		/*
@@ -73,6 +74,13 @@ speed is speed of rotation of image in millisecond<br/>
 		* speed is speed of rotation of image in millisecond
 		*/
 		speed = 50;
+		/*
+		* valign is a alignment
+		* 0.top
+		* 1.middle
+		* 2.bottom
+		*/
+		valign = 1;ss
 		/*---------------------------------------------------------------*/
 		$(document).ready(function(){
 			init_kslide();
